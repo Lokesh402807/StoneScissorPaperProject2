@@ -1,0 +1,168 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.NameEntryPage {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px;
+}
+
+.NameEntryPage h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.NameEntryPage label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.NameEntryPage input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: calc(100% - 20px);
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.NameEntryPage input[type="text"]:focus {
+  border-color: #4caf50;
+}
+
+.NameEntryPage button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.NameEntryPage button:hover {
+  background-color: #45a049;
+}
+
+
+.GamePage {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.GamePage h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.GamePage p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.Game {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.Player, .Computer {
+  flex: 1;
+}
+
+.Player button, .Computer button {
+  width: 100px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.Score {
+  font-size: 16px;
+  color: #333;
+}
+
+
+
+.EndGamePage {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px;
+}
+
+.EndGamePage h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.EndGamePage p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.EndGamePage ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.EndGamePage li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.EndGamePage button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.EndGamePage button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.EndGamePage button:hover {
+  background-color: #45a049;
+}
