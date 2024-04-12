@@ -1,3 +1,4 @@
+require('dotenv').config(); // Load environment variables from .env file
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -8,10 +9,10 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'lokesh',
-  password: 'root1',
-  database: 'game'
+  host: process.env.MYSQL_HOST,
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DATABASE,
 });
 
 connection.connect((err) => {
