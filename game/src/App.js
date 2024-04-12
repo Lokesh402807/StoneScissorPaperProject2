@@ -44,7 +44,7 @@ function App() {
 
   const saveGameResult = async () => {
     try {
-      const response = await fetch('http://localhost:3001/saveGameResult', {
+      const response = await fetch('https://stone-scissor-paper-project2-rdbb.vercel.app/saveGameResult', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -96,7 +96,7 @@ function App() {
 
   const fetchFinalResults = async () => {
     try {
-      const response = await fetch('http://localhost:3001/finalResults');
+      const response = await fetch('https://stone-scissor-paper-project2-rdbb.vercel.app/finalResults');
       const data = await response.json();
       setFinalResults(data);
     } catch (error) {
@@ -107,7 +107,7 @@ function App() {
 
   const fetchLastGameResult = async () => {
     try {
-      const response = await fetch('http://localhost:3001/lastGameResult');
+      const response = await fetch('https://stone-scissor-paper-project2-rdbb.vercel.app/lastGameResult');
       const data = await response.json();
       setLastGameResult(data);
     } catch (error) {
