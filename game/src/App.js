@@ -44,7 +44,7 @@ function App() {
 
   const saveGameResult = async () => {
     try {
-      const response = await fetch('https://backend-nine-ochre-52.vercel.app/saveGameResult', {
+      const response = await fetch('https://stone-scissor-paper-project21.vercel.app/saveGameResult', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -96,7 +96,7 @@ function App() {
 
   const fetchFinalResults = async () => {
     try {
-      const response = await fetch('https://backend-nine-ochre-52.vercel.app/finalResults');
+      const response = await fetch('https://stone-scissor-paper-project21.vercel.app/finalResults');
       const data = await response.json();
       setFinalResults(data);
     } catch (error) {
@@ -107,7 +107,7 @@ function App() {
 
   const fetchLastGameResult = async () => {
     try {
-      const response = await fetch('https://backend-nine-ochre-52.vercel.app/lastGameResult');
+      const response = await fetch('https://stone-scissor-paper-project21.vercel.app/lastGameResult');
       const data = await response.json();
       setLastGameResult(data);
     } catch (error) {
